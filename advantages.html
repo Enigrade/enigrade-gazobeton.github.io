@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name= "viewport" content= "width=device-width, initial-scale=1.0, user-scalable=no" >
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/ion.tabs.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.tabs.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/jquery.dotdotdot.min.js"></script>
+  <script src="js/main.js"></script> 
+  <title>Газобетон</title>
+</head>
+<body>
+  <div class="popUp-overlay">
+    <div class="popUp  popUp-city" data-target="city">
+      <div class="popUp-city__title">
+        <span>выберите</span>
+        Ваш город
+      </div>
+      <form action="" class="popUp-city__form">
+        <div class="popUp-city__input-block  input-block">
+          <input class="popUp-city__input-text" type="text" placeholder="Название города">
+        </div>
+        <div class="popUp-city__input-block  input-block">
+          <input class="popUp-city__input-submit" type="submit" value="">
+        </div>
+      </form>
+      <ul class="popUp-city__list">
+        <li><a class="popUp-city__main-city" href="">Москва и Подмосковье</a></li>
+        <li><a class="popUp-city__main-city" href="">Санкт-Петербург</a></li>
+        <li><a class="popUp-city__main-city" href="">Иркутск</a></li>
+        <li><a class="popUp-city__main-city" href="">Ангарск</a></li>
+        <li><a class="popUp-city__main-city" href="">Саянск</a></li>
+        <li><a href="">Абакан</a></li>
+        <li><a href="">Архангельск</a></li>
+        <li><a href="">Астрахань</a></li>
+        <li><a href="">Город10</a></li>
+        <li><a href="">Город11</a></li>
+        <li><a href="">Город12</a></li>
+        <li><a href="">Город13</a></li>
+        <li><a href="">Город14</a></li>
+        <li><a href="">Город15</a></li>
+      </ul>
+    </div>
+    <div class="popUp popUp-request" data-target="request">
+      <div class="popUp-request__title">
+        <span>онлайн</span>
+        ЗАЯВКА
+      </div>
+      <form action="" class="popUp-request__form">
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Ваше имя
+          </span>
+          <input type="text" class="popUp-request__form-input">
+        </div>
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Номер телефона
+          </span>
+          <input type="text" class="popUp-request__form-input">
+        </div>
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Комментарий (сколько м3, какой город)
+          </span>
+          <textarea class="popUp-request__form-textarea"></textarea>
+        </div>
+        <div class="input-block popUp-request__form-input-block-submit">
+          <input class="popUp-request__form-submit" type="submit" value="Отправить заявку">
+        </div>
+      </form>
+    </div>
+  </div>
+  <header class="header">
+    <div class="wrap">
+      <nav class="header__nav  menu  clear">
+        <li>
+          <a href="">Новости</a>
+        </li>
+        <li>
+          <a href="">Компания</a>
+        </li>
+        <li>
+          <a class="active" href="">Производство</a>
+        </li>
+        <li>
+          <a href="">Где купить</a>
+        </li>
+      </nav>
+      <div class="header__city">
+        <span class="header__city-title">
+          ваш город:
+        </span>
+        <a href="" class="header__city-button popButton" data-target="city">Иркутск</a>
+      </div>
+      <a href="tel:8(3952)783-783" class="header__phone">8(3952)783-783</a>
+      <div class="header__socials">
+        <a href="" class="header__soc-item  header__soc-item--insta"></a>
+        <a href="" class="header__soc-item  header__soc-item--vk"></a>
+        <a href="" class="header__soc-item  header__soc-item--ok"></a>
+      </div>
+      <div class="header__cart">
+        <a href="" class="header__cart-title">
+          Корзина <div class="header__cart-count">(<span>0</span>)</div>
+        </a>
+      </div>
+      <a href="" class="header__profile"></a>
+    </div>
+  </header>
+  <header class="header  header--float">
+    <div class="wrap">
+      <div class="header--float__logo">
+        <a href="">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header--float__menu-button-block">
+        <button class="header--float__menu-button cmn-toggle-switch cmn-toggle-switch__htx">
+          <span>toggle menu</span>
+        </button>
+      </div>
+      <nav class="header__nav  menu  clear">
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href="">О компании</a>
+          <ul class="drop-menu">
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Компания</a>
+            </li>
+            <li>
+              <a href="">Наше производство</a>
+            </li>
+            <li>
+              <a href="">Где купить</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">О газобетоне</a>
+        </li>
+        <li>
+          <a class="" href="">Каталог продукции</a>
+          <ul class="drop-menu">
+            <li>
+              <a href="">Первый</a>
+            </li>
+            <li>
+              <a href="">Второй</a>
+            </li>
+            <li>
+              <a href="">Третий</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Услуги</a>
+        </li>
+        <li>
+          <a href="">Проекты</a>
+        </li>
+      </nav>
+      <div class="header__city">
+        <a href="" class="header__profile"></a>
+        <span class="header__city-title">
+          ваш город:
+        </span>
+        <a href="" class="header__city-button popButton" data-target="city">Иркутск</a>
+      </div>
+      <a href="tel:8(3952)783-783" class="header__phone  desc">8(3952)783-783</a>
+      <div class="header__socials">
+        <a href="tel:8(3952)783-783" class="header__phone">8(3952)783-783</a>
+        <a href="" class="header__soc-item  header__soc-item--insta"></a>
+        <a href="" class="header__soc-item  header__soc-item--vk"></a>
+        <a href="" class="header__soc-item  header__soc-item--ok"></a>
+      </div>
+      <div class="header__cart">
+        <a href="" class="header__cart-title">
+          Корзина <div class="header__cart-count">(<span>0</span>)</div>
+        </a>
+      </div>
+      <a href="" class="header__profile  desc"></a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-top  main-top--catalog">
+      <div class="wrap">
+        <div class="top-menu">
+          <div class="top-menu__logo">
+            <a href="">
+              <img src="img/logo-top-dark.png" alt="">
+            </a>
+          </div>
+          <nav class="top-menu__nav  menu">
+            <li>
+              <a href="">О газобетоне</a>
+            </li>
+            <li class="have-menu">
+              <a class="active have-menu" href="">Каталог продукции</a>
+              <ul class="drop-menu">
+                <li>
+                  <a href="">Газобетонные блоки</a>
+                </li>
+                <li>
+                  <a class="active" href="">U-образные блоки</a>
+                </li>
+                <li>
+                  <a href="">Клей</a>
+                </li>
+                <li>
+                  <a href="">Сухие смеси</a>
+                </li>
+                <li>
+                  <a href="">Инструмент</a>
+                </li>
+                <li>
+                  <a href="">насыпной утеплитель</a>
+                </li>
+                <li>
+                  <a href="">Крепление</a>
+                </li>
+                <li>
+                  <a href="">арматура</a>
+                </li>
+                <li>
+                  <a href="">гидроизоляция</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Услуги</a>
+            </li>
+            <li>
+              <a href="">Проекты</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <div class="wrapper-for-side clear">
+      <div class="sidebar">
+        <ul class="sidebar__menu">
+          <div class="wrap-side">
+            <li>
+              <a href="">Технология производства автоклавного газобетона</a>
+            </li>
+            <li>
+              <a href="">Преимущества газобетона</a>
+            </li>
+            <li>
+              <a href="">Экологическое преимущество газобетона перед кирпичом</a>
+            </li>
+            <li>
+              <a href="">Сфера применения газобетона</a>
+            </li>
+            <li>
+              <a href="">Нормативная документация</a>
+            </li>
+            <li>
+              <a href="">Фото- и видеоматериалы</a>
+            </li>
+            <li>
+              <a href="">Вопросы и ответы</a>
+            </li>
+          </div>
+        </ul>
+        <div class="sidebar__article">
+          <div class="wrap-side">
+            <a href="" class="sidebar__article-title">
+              Сфера применения газобетона
+            </a>
+            <div class="sidebar__article-image">
+              <a href="">
+                <img src="img/article.jpg" alt="">
+              </a>
+            </div>
+            <div class="sidebar__article-desc">
+              Наиболее высокое значение удельной эффективной активности радия — 226 имеют глины, щебень из гранита, керамзитовый гравий. При изготовлении в заводских условиях керамзитового гравия из бентонитовых глин с высоким содержанием радионуклидов возможно образование технологических зон, опасных для здоровья персонала. Сам керамзит, широко применяемый в жилищном строительстве, по мнению многих специалистов, представляет потенциальную угрозу для здоровья человека.
+            </div>
+            <a href="" class="sidebar__article-more">подробнее</a>
+          </div>
+        </div>
+        <div class="sidebar__article">
+          <div class="wrap-side">
+            <a href="" class="sidebar__article-title">
+              Сфера применения газобетона
+            </a>
+            <div class="sidebar__article-image">
+              <a href="">
+                <img src="img/article.jpg" alt="">
+              </a>
+            </div>
+            <div class="sidebar__article-desc">
+              Наиболее высокое значение удельной эффективной активности радия — 226 имеют глины, щебень из гранита, керамзитовый гравий. При изготовлении в заводских условиях керамзитового гравия из бентонитовых глин с высоким содержанием радионуклидов возможно образование технологических зон, опасных для здоровья персонала. Сам керамзит, широко применяемый в жилищном строительстве, по мнению многих специалистов, представляет потенциальную угрозу для здоровья человека.
+            </div>
+            <a href="" class="sidebar__article-more">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-with-side">
+        <div class="breadcrumbs-sm">
+          <a href="">Главная страница</a>
+          <a href="">Статьи</a>
+          <a href="">Преимущества</a>
+        </div>
+        <div class="side-menu-mob">Меню</div>
+        <section class="article">
+          <h1 class="article__title">
+            Экологическое преимущество газобетона перед кирпичом
+          </h1>
+          <hr>
+          <div class="article__intro">
+            Когда речь заходит о материале для своего дома, то на одно из ведущих мест выходит показатель экологичности. Что же выбрать: кирпич или автоклавный газобетон? (Текст-вступление)
+          </div>
+          Атоклавный газобетон - экологически безопасный материал - в нем не содержится тяжелых металлов, канцерогенных и прочих вредных веществ, что гарантирует полную безопасность изделия для человека (при пожаре нет опасности испарения токсичных веществ). Автоклавный газобетон производят из кварцевого песка, цемента, воды, извести и гипса – натуральных и естественных природных материалов. <br>
+
+          Кирпич, казалось бы изготовленный из природной глины, тоже должен быть экологичен, но, как показывает практика, это не так. Не стоит забывать, что глина для производства керамического кирпича добывается в карьерах, и зачастую имеет повышенный радиационный фон.
+          <h2 class="article__title-2">
+            Радиоактивность осадочных пород (H2)
+          </h2>
+          Радиоактивность горных пород определяется их составом, генезисом, условиями залегания и некоторыми другими факторами. Среди осадочных пород максимальной радиоактивностью обладают глины, глинистые и битуминозные сланцы. Радиоактивность осадочных пород значительно возрастает при обогащении их монацитом, глауконитом и глинистыми минералами. <br>
+
+          Наиболее высокое значение удельной эффективной активности радия — 226 имеют глины, щебень из гранита, керамзитовый гравий. При изготовлении в заводских условиях керамзитового гравия из бентонитовых глин с высоким содержанием радионуклидов возможно образование технологических зон, опасных для здоровья персонала. Сам керамзит, широко применяемый в жилищном строительстве, по мнению многих специалистов, представляет потенциальную угрозу для здоровья человека.
+          <hr>
+          <div class="article__warn">
+            Проанализировав многочисленные работы по определению содержания и закономерностей миграции искусственных и природных радионуклидов в системе: «горные породы — строительные материалы — здания и сооружения», можно сделать следующие выводы:
+          </div>
+          <ul class="article__list">
+            <li>Чем древнее глины, тем выше в них содержание природных радионуклидов: радия — 226 и тория — 232
+              вредные воздействия природных ионизирующих излучений представляют наибольшую опасность, так как с течением времени создают суммарную дозу облучения для человека более значительную, чем от искусственных радионуклидов</li>
+              <li>Известные технологии изготовления керамзитового гравия не учитывают особенностей бентонитов, связанных с высоким содержанием в них природных радионуклидов</li>
+              <li>Вредные воздействия природных ионизирующих излучений представляют наибольшую опасность, так как с течением времени создают суммарную дозу облучения для человека более значительную, чем от искусственных радионуклидов</li>
+              <li>Изготовления керамзитового гравия не учитывают особенностей бентонитов, связанных с высоким содержанием в них природных радионуклидов</li>
+            </ul>
+            <hr>
+            <img src="img/art-img.jpg" alt="" class="article__image">
+            <h3 class="article__title-3">Радиоактивность осадочных пород (H3)</h3>
+            Радиоактивность осадочных пород (H3)
+
+            Радиоактивность горных пород определяется их составом, генезисом, условиями залегания и некоторыми другими факторами. Среди осадочных пород максимальной радиоактивностью обладают глины, глинистые и битуминозные сланцы. Радиоактивность осадочных пород значительно возрастает при обогащении их монацитом, глауконитом и глинистыми минералами. <br>
+
+            Наиболее высокое значение удельной эффективной активности радия — 226 имеют глины, щебень из гранита, керамзитовый гравий. При изготовлении в заводских условиях керамзитового гравия из бентонитовых глин с высоким содержанием радионуклидов возможно образование технологических зон, опасных для здоровья персонала. Сам керамзит, широко применяемый в жилищном строительстве, по мнению многих специалистов, представляет потенциальную угрозу для здоровья человека. <br>
+
+            <form action="" class="page-requst">
+              <div class="page-requst__title-block">
+                <img src="img/request-ico.png" alt="">
+                <div class="page-requst__title">
+                  Напишите нам
+                  <b>Хоть что-нибудь!</b>
+                </div>
+              </div>
+              <div class="page-requst__content">
+                <label>
+                  <span>Ваше имя</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Номер телефона</span>
+                  <input type="text">
+                </label>
+                <div class="page-requst__submit-block">
+                  <input type="submit" value="Отправить заявку">
+                </div>
+              </div>
+            </form>
+            <div class="article__warn">
+              Проанализировав многочисленные работы по определению содержания и закономерностей миграции искусственных и природных радионуклидов в системе: «горные породы — строительные материалы — здания и сооружения», можно сделать следующие выводы:
+            </div>
+            <ul class="article__list">
+              <li>Чем древнее глины, тем выше в них содержание природных радионуклидов: радия — 226 и тория — 232
+                вредные воздействия природных ионизирующих излучений представляют наибольшую опасность, так как с течением времени создают суммарную дозу облучения для человека более значительную, чем от искусственных радионуклидов</li>
+                <li>Известные технологии изготовления керамзитового гравия не учитывают особенностей бентонитов, связанных с высоким содержанием в них природных радионуклидов</li>
+                <li>Вредные воздействия природных ионизирующих излучений представляют наибольшую опасность, так как с течением времени создают суммарную дозу облучения для человека более значительную, чем от искусственных радионуклидов</li>
+                <li>Изготовления керамзитового гравия не учитывают особенностей бентонитов, связанных с высоким содержанием в них природных радионуклидов</li>
+              </ul>
+              <div class="table-compr">
+                <div class="table-compr__title">
+                  Газобетон: сравнение с деревом
+                </div>
+                <table >
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><img src="img/camp-tab1.png" alt=""></td>
+                      <td><img src="img/camp-tab2.png" alt=""></td>
+                    </tr>
+                    <tr>
+                      <td>Пожаробезопасность</td>
+                      <td>Легко воспламеняемый материал</td>
+                      <td>Не горит</td>
+                    </tr>
+                    <tr>
+                      <td>Эксплуатация</td>
+                      <td>Подвержен гниению и иным химическим процессам, мелким насекомым. Требует усушки, а значит сил и материальных вложений</td>
+                      <td>Не гниет, не подвержен воздействию насекомых и грызунов</td>
+                    </tr>
+                    <tr>
+                      <td>Многоэтажность и малоэтажность</td>
+                      <td>Используется только в малоэтажном строительстве</td>
+                      <td>Не гниет, не подвержен воздействию насекомых и грызунов</td>
+                    </tr>
+                    <tr>
+                      <td>Долговечность</td>
+                      <td>Деревянные дома через 20–40 лет подвергнутся усадке, растрескиванию, начнут коробиться</td>
+                      <td>Дома из блоков долговечны</td>
+                    </tr>
+                    <tr>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="mobile">
+                  <tbody>
+                    <tr>
+                      <td><img src="img/camp-tab1.png" alt=""></td>
+                      <td><img src="img/camp-tab2.png" alt=""></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Пожаробезопасность</td>
+                    </tr>
+                    <tr>
+                      <td>Легко воспламеняемый материал</td>
+                      <td>Не горит</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Эксплуатация</td>  
+                    </tr>
+                    <tr>
+                      <td>Подвержен гниению и иным химическим процессам, мелким насекомым. Требует усушки, а значит сил и материальных вложений</td>
+                      <td>Не гниет, не подвержен воздействию насекомых и грызунов</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Многоэтажность и малоэтажность</td>
+                    </tr>
+                    <tr>
+                      <td>Используется только в малоэтажном строительстве</td>
+                      <td>Не гниет, не подвержен воздействию насекомых и грызунов</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Долговечность</td>
+                    </tr>
+                    <tr>
+                      <td>Деревянные дома через 20–40 лет подвергнутся усадке, растрескиванию, начнут коробиться</td>
+                      <td>Дома из блоков долговечны</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="wrap">
+          <div class="footer__top clear">
+            <nav class="footer__menu">
+              <ul class="clear">
+                <li><a href=""></a></li>
+                <li><a href="">Интернет-магазин</a></li>
+                <li><a class="active" href="">Компания</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="footer__socials">
+              <a href="" class="footer__soc-item  footer__soc-item--vk"></a>
+              <a href="" class="footer__soc-item  footer__soc-item--insta"></a>
+            </div>
+          </div>
+          <div class="footer__bottom clear">
+            <div class="footer__desc">
+              &#169; 2017 «Байкальский газобетон». Все права защищены
+            </div>
+            <a href="mailto:info@bgazobeton.ru" class="footer__mail">info@bgazobeton.ru</a>
+            <a href="tel:8(3952)783783" class="footer__phone">8(3952)783-783</a>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>

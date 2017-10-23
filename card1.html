@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name= "viewport" content= "width=device-width, initial-scale=1.0, user-scalable=no" >
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/ion.tabs.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.tabs.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/jquery.dotdotdot.min.js"></script>
+  <script src="js/main.js"></script> 
+  <title>Газобетон</title>
+</head>
+<body>
+  <div class="popUp-overlay">
+    <div class="popUp  popUp-city" data-target="city">
+      <div class="popUp-city__title">
+        <span>выберите</span>
+        Ваш город
+      </div>
+      <form action="" class="popUp-city__form">
+        <div class="popUp-city__input-block  input-block">
+          <input class="popUp-city__input-text" type="text" placeholder="Название города">
+        </div>
+        <div class="popUp-city__input-block  input-block">
+          <input class="popUp-city__input-submit" type="submit" value="">
+        </div>
+      </form>
+      <ul class="popUp-city__list">
+        <li><a class="popUp-city__main-city" href="">Москва и Подмосковье</a></li>
+        <li><a class="popUp-city__main-city" href="">Санкт-Петербург</a></li>
+        <li><a class="popUp-city__main-city" href="">Иркутск</a></li>
+        <li><a class="popUp-city__main-city" href="">Ангарск</a></li>
+        <li><a class="popUp-city__main-city" href="">Саянск</a></li>
+        <li><a href="">Абакан</a></li>
+        <li><a href="">Архангельск</a></li>
+        <li><a href="">Астрахань</a></li>
+        <li><a href="">Город10</a></li>
+        <li><a href="">Город11</a></li>
+        <li><a href="">Город12</a></li>
+        <li><a href="">Город13</a></li>
+        <li><a href="">Город14</a></li>
+        <li><a href="">Город15</a></li>
+      </ul>
+    </div>
+    <div class="popUp popUp-request" data-target="request">
+      <div class="popUp-request__title">
+        <span>онлайн</span>
+        ЗАЯВКА
+      </div>
+      <form action="" class="popUp-request__form">
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Ваше имя
+          </span>
+          <input type="text" class="popUp-request__form-input">
+        </div>
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Номер телефона
+          </span>
+          <input type="text" class="popUp-request__form-input">
+        </div>
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Комментарий (сколько м3, какой город)
+          </span>
+          <textarea class="popUp-request__form-textarea"></textarea>
+        </div>
+        <div class="input-block popUp-request__form-input-block-submit">
+          <input class="popUp-request__form-submit" type="submit" value="Отправить заявку">
+        </div>
+      </form>
+    </div>
+  </div>
+  <header class="header">
+    <div class="wrap">
+      <nav class="header__nav  menu  clear">
+        <li>
+          <a href="">Новости</a>
+        </li>
+        <li>
+          <a href="">Компания</a>
+        </li>
+        <li>
+          <a class="active" href="">Производство</a>
+        </li>
+        <li>
+          <a href="">Где купить</a>
+        </li>
+      </nav>
+      <div class="header__city">
+        <span class="header__city-title">
+          ваш город:
+        </span>
+        <a href="" class="header__city-button popButton" data-target="city">Иркутск</a>
+      </div>
+      <a href="tel:8(3952)783-783" class="header__phone">8(3952)783-783</a>
+      <div class="header__socials">
+        <a href="" class="header__soc-item  header__soc-item--insta"></a>
+        <a href="" class="header__soc-item  header__soc-item--vk"></a>
+        <a href="" class="header__soc-item  header__soc-item--ok"></a>
+      </div>
+      <div class="header__cart">
+        <a href="" class="header__cart-title">
+          Корзина <div class="header__cart-count">(<span>0</span>)</div>
+        </a>
+      </div>
+      <a href="" class="header__profile"></a>
+    </div>
+  </header>
+  <header class="header  header--float">
+    <div class="wrap">
+      <div class="header--float__logo">
+        <a href="">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header--float__menu-button-block">
+        <button class="header--float__menu-button cmn-toggle-switch cmn-toggle-switch__htx">
+          <span>toggle menu</span>
+        </button>
+      </div>
+      <nav class="header__nav  menu  clear">
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href="">О компании</a>
+          <ul class="drop-menu">
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Компания</a>
+            </li>
+            <li>
+              <a href="">Наше производство</a>
+            </li>
+            <li>
+              <a href="">Где купить</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">О газобетоне</a>
+        </li>
+        <li>
+          <a class="" href="">Каталог продукции</a>
+          <ul class="drop-menu">
+            <li>
+              <a href="">Первый</a>
+            </li>
+            <li>
+              <a href="">Второй</a>
+            </li>
+            <li>
+              <a href="">Третий</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Услуги</a>
+        </li>
+        <li>
+          <a href="">Проекты</a>
+        </li>
+      </nav>
+      <div class="header__city">
+        <a href="" class="header__profile"></a>
+        <span class="header__city-title">
+          ваш город:
+        </span>
+        <a href="" class="header__city-button popButton" data-target="city">Иркутск</a>
+      </div>
+      <a href="tel:8(3952)783-783" class="header__phone  desc">8(3952)783-783</a>
+      <div class="header__socials">
+        <a href="tel:8(3952)783-783" class="header__phone">8(3952)783-783</a>
+        <a href="" class="header__soc-item  header__soc-item--insta"></a>
+        <a href="" class="header__soc-item  header__soc-item--vk"></a>
+        <a href="" class="header__soc-item  header__soc-item--ok"></a>
+      </div>
+      <div class="header__cart">
+        <a href="" class="header__cart-title">
+          Корзина <div class="header__cart-count">(<span>0</span>)</div>
+        </a>
+      </div>
+      <a href="" class="header__profile  desc"></a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-top  main-top--catalog">
+      <div class="wrap">
+        <div class="top-menu">
+          <div class="top-menu__logo">
+            <a href="">
+              <img src="img/logo-top-dark.png" alt="">
+            </a>
+          </div>
+          <nav class="top-menu__nav  menu">
+            <li>
+              <a href="">О газобетоне</a>
+            </li>
+            <li class="have-menu">
+              <a class="active have-menu" href="">Каталог продукции</a>
+              <ul class="drop-menu">
+                <li>
+                  <a href="">Газобетонные блоки</a>
+                </li>
+                <li>
+                  <a class="active" href="">U-образные блоки</a>
+                </li>
+                <li>
+                  <a href="">Клей</a>
+                </li>
+                <li>
+                  <a href="">Сухие смеси</a>
+                </li>
+                <li>
+                  <a href="">Инструмент</a>
+                </li>
+                <li>
+                  <a href="">насыпной утеплитель</a>
+                </li>
+                <li>
+                  <a href="">Крепление</a>
+                </li>
+                <li>
+                  <a href="">арматура</a>
+                </li>
+                <li>
+                  <a href="">гидроизоляция</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Услуги</a>
+            </li>
+            <li>
+              <a href="">Проекты</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="card__title">
+        <div class="wrap">
+          <div class="card-title">
+            Оформление заказа <span># 3456</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div id="tabs_2" class="card__stages  tabs  ionTabs" data-name="Tabs2">
+          <ul class="card__tabs ionTabs__head">
+            <li class="ionTabs__tab" data-target="Tab_1">Товары в корзине</li>
+            <li class="ionTabs__tab" data-target="Tab_2">Оплата и доставка</li>
+            <li class="ionTabs__tab" data-target="Tab_3">Подтверждение</li>
+          </ul>
+          <div class="card__tabs-content  ionTabs__body">
+            <form class="card__form">
+              <div class="card__tab-content  ionTabs__item" data-name="Tab_1">
+                <div class="card__items">
+                  <div class="card__item">
+                    <div class="card__photo">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="card__title-block">
+                      <a href="" class="card__item-title">
+                        Основной блок <b>Б-2,4</b>
+                      </a>
+                      <span class="card__item-size">
+                        250х250х625 mm
+                      </span>
+                    </div>
+                    <div class="card__price-block">
+                      <div class="card__item-price">
+                        <b>3400</b> руб./м<sup>3</sup>
+                      </div>
+                      <div class="card__item-pack">
+                        (12.8 м<sup>3</sup> в поддоне)
+                      </div>
+                    </div>
+                    <div class="card__count-block">
+                      <a href="" class="card__count-button  card__count-button--rem"></a>
+                      <div class="card__count-text"><div><input type="number" value="0"></div> <span>м<sup>3</sup></span></div>
+                      <a href="" class="card__count-button  card__count-button--add"></a>
+                    </div>
+                    <div class="card__sum-block">
+                      <div class="card__item-sum">
+                        Итого: <span>174 080</span> <span>руб.</span>
+                      </div>
+                      <div class="card__item-pack-count">
+                        (4 поддона)
+                      </div>
+                    </div>
+                    <a href="" class="card__remove-button"></a>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__photo">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="card__title-block">
+                      <a href="" class="card__item-title">
+                        Основной блок <b>Б-2,4</b>
+                      </a>
+                      <span class="card__item-size">
+                        250х250х625 mm
+                      </span>
+                    </div>
+                    <div class="card__price-block">
+                      <div class="card__item-price">
+                        <b>3400</b> руб./м<sup>3</sup>
+                      </div>
+                      <div class="card__item-pack">
+                        (12.8 м<sup>3</sup> в поддоне)
+                      </div>
+                    </div>
+                    <div class="card__count-block">
+                      <a href="" class="card__count-button  card__count-button--rem"></a>
+                      <div class="card__count-text"><div><input type="number" value="0"></div> <span>м<sup>3</sup></span></div>
+                      <a href="" class="card__count-button  card__count-button--add"></a>
+                    </div>
+                    <div class="card__sum-block">
+                      <div class="card__item-sum">
+                        Итого: <span>174 080</span> <span>руб.</span>
+                      </div>
+                      <div class="card__item-pack-count">
+                        (4 поддона)
+                      </div>
+                    </div>
+                    <a href="" class="card__remove-button"></a>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__photo">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="card__title-block">
+                      <a href="" class="card__item-title">
+                        Основной блок <b>Б-2,4</b>
+                      </a>
+                      <span class="card__item-size">
+                        250х250х625 mm
+                      </span>
+                    </div>
+                    <div class="card__price-block">
+                      <div class="card__item-price">
+                        <b>3400</b> руб./м<sup>3</sup>
+                      </div>
+                      <div class="card__item-pack">
+                        (12.8 м<sup>3</sup> в поддоне)
+                      </div>
+                    </div>
+                    <div class="card__count-block">
+                      <a href="" class="card__count-button  card__count-button--rem"></a>
+                      <div class="card__count-text"><div><input type="number" value="0"></div> <span>м<sup>3</sup></span></div>
+                      <a href="" class="card__count-button  card__count-button--add"></a>
+                    </div>
+                    <div class="card__sum-block">
+                      <div class="card__item-sum">
+                        Итого: <span>174 080</span> <span>руб.</span>
+                      </div>
+                      <div class="card__item-pack-count">
+                        (4 поддона)
+                      </div>
+                    </div>
+                    <a href="" class="card__remove-button"></a>
+                  </div>
+                </div>
+                <div class="card__bottom-line">
+                  <div class="card__total">
+                    <div class="card__total-title">
+                      Общая стоимость без учета доставки:
+                    </div>
+                    <div class="card__total-price">
+                      <b>100 450</b> руб.
+                    </div>
+                  </div>
+                  <a href="" class="card__next-stage">Продолжить оформление</a>
+                </div>
+              </div>
+              <div class="card__tab-content  ionTabs__item" data-name="Tab_2">
+                <div class="card__form-block--delivery  card__form-block">
+                  <div class="card__form-title-block">
+                    <div class="card__form-title">Выберите тип доставки:</div>
+                  </div>
+                  <div class="card__form-items">
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="deliv" checked>
+                        <span class="card__input-label">
+                          Самовывоз
+                        </span>
+                        <span class="card__input-desc">
+                          г. Иркутск, ул. Октябрьской революции, 1/4, БЦ «Терра»
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="deliv">
+                        <span class="card__input-label">
+                          Доставка ближайшие города Иркутска
+                        </span>
+                        <span class="card__input-desc">
+                          Ангарск, Усолье-Сибирское, Черемхово, Шелехов
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="deliv">
+                        <span class="card__input-label">
+                          Доставка в Иркутск
+                        </span>
+                        <span class="card__input-desc">
+                          Доставка в черте города
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="deliv">
+                        <span class="card__input-label">
+                          В другой город
+                        </span>
+                        <input type="text">
+                        <span class="card__input-desc">
+                          Укажите ваш город
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__form-block--payment  card__form-block">
+                  <div class="card__form-title-block">
+                    <div class="card__form-title">Выберите способ оплаты:</div>
+                  </div>
+                  <div class="card__form-items">
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="pay" checked>
+                        <span class="card__input-label">
+                          Наличные
+                        </span>
+                        <span class="card__input-desc">
+                          Оплата заказа наличными при получении
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="pay">
+                        <span class="card__input-label">
+                          Расчетный счет
+                        </span>
+                        <span class="card__input-desc">
+                          Курьер приедет с товаром и переносыми терминалом.
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="pay">
+                        <span class="card__input-label">
+                          Оплата платежной картой
+                        </span>
+                        <span class="card__input-desc">
+                          Курьер приедет с товаром и переносыми терминалом.
+                        </span>
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <input type="radio" name="pay">
+                        <span class="card__input-label">
+                          Оплата картой онлайн
+                        </span>
+                        <span class="card__input-desc">
+                          Через популярные системы платежей
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__form-block--info  card__form-block">
+                  <div class="card__form-title-block">
+                    <div class="card__form-title">Укажите личные данные</div>
+                  </div>
+                  <div class="card__form-items">
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          Фамилия
+                        </span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          Имя
+                        </span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          Отчество
+                        </span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          Город
+                        </span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          Улица/дом
+                        </span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          E-mail
+                        </span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          Телефон
+                        </span>
+                        <input type="text" placeholder="+7 (___) ___ - __ - __">
+                      </label>
+                    </div>
+                    <div class="card__input-block">
+                      <label>
+                        <span class="card__input-label">
+                          Комментарий (домофон, проходная и проч)
+                        </span>
+                        <textarea></textarea>
+                      </label>
+                    </div>
+                    <div class="card__login-block">
+                      <div class="card__input-block">
+                        <label>
+                          <input type="checkbox">
+                          <span class="card__input-label">
+                            Зарегистрироваться
+                          </span>
+                        </label>
+                      </div>
+                      <div class="card__input-block">
+                        <label>
+                          <span class="card__input-label">
+                            Введите пароль
+                          </span>
+                          <input type="text">
+                        </label>
+                      </div>
+                      <div class="card__input-block">
+                        <label>
+                          <span class="card__input-label">
+                            Повторите пароль
+                          </span>
+                          <input type="text">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__bottom-line  card__bottom-line--tab-2">
+                  <a href="" class="card__next-stage">Разместить заказ</a>
+                </div>
+              </div>
+              <div class="card__tab-content  ionTabs__item" data-name="Tab_3">
+                <div class="card__confirm-info">
+                  <b>Ваш заказ # 3456 успешно оформлен,</b>
+                  <span>В течении рабочего дня вам перезвонит наш менеджер для подтверждения сроков его выполнения.</span>
+                </div>
+                <div class="card__confirm-items-title">
+                  Заказанные товары:
+                </div>
+                <div class="card__items  card__items--confirm">
+                  <div class="card__item">
+                    <div class="card__photo">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="card__title-block">
+                      <a href="" class="card__item-title">
+                        Основной блок <b>Б-2,4</b>
+                      </a>
+                      <span class="card__item-size">
+                        250х250х625 mm
+                      </span>
+                      <div class="card__item-characters">
+                        <span>Плотность: D400;</span>
+                        <span>Прочность: B 2.5</span>
+                        <span>СибТехноКомплекс (Ангарск)</span>
+                      </div>
+                    </div>
+                    <div class="card__price-block">
+                      <div class="card__item-price">
+                        <b>3400</b> руб./м<sup>3</sup>
+                      </div>
+                      <div class="card__item-pack">
+                        (12.8 м<sup>3</sup> в поддоне)
+                      </div>
+                    </div>
+                    <div class="card__count-block">
+                      <div class="card__count-text"><div><span>51,2</span></div> <span>м<sup>3</sup></span></div>
+                    </div>
+                    <div class="card__sum-block">
+                      <div class="card__item-sum">
+                        Итого: <span>174 080</span> <span>руб.</span>
+                      </div>
+                      <div class="card__item-pack-count">
+                        (4 поддона)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__bottom-line  card__bottom-line--conf">
+                  <div class="card__total clear">
+                    <div class="card__total-title  card__total-title--conf">
+                      Способы доставки и оплаты:
+                    </div>
+                    <ul class="card__confirm-data">
+                      <li>Иркутск, ул. Зеленых Партизан, 88к</li>
+                      <li>Доставка курьером</li>
+                      <li>Оплата банковской картой</li>
+                    </ul>
+                  </div>
+
+                  <div class="cart__confirm-buy">
+                    <div class="cart__confirm-total">
+                      <span>Общая стоимость:</span> <b>100 450</b> <span>руб.</span>
+                    </div>
+                    <div class="cart__submit-block">
+                      <input type="submit" value="Оплатить банковской картой">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="ionTabs__preloader"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top clear">
+        <nav class="footer__menu">
+          <ul class="clear">
+            <li><a href=""></a></li>
+            <li><a href="">Интернет-магазин</a></li>
+            <li><a class="active" href="">Компания</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <a href="" class="footer__soc-item  footer__soc-item--vk"></a>
+          <a href="" class="footer__soc-item  footer__soc-item--insta"></a>
+        </div>
+      </div>
+      <div class="footer__bottom clear">
+        <div class="footer__desc">
+          &#169; 2017 «Байкальский газобетон». Все права защищены
+        </div>
+        <a href="mailto:info@bgazobeton.ru" class="footer__mail">info@bgazobeton.ru</a>
+        <a href="tel:8(3952)783783" class="footer__phone">8(3952)783-783</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

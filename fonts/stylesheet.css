@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'Museo';
+	src: url('MuseoSansCyrl-500.eot');
+	src: url('MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+		url('MuseoSansCyrl-500.woff2') format('woff2'),
+		url('MuseoSansCyrl-500.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('MuseoSansCyrl-100Italic.eot');
+	src: url('MuseoSansCyrl-100Italic.eot?#iefix') format('embedded-opentype'),
+		url('MuseoSansCyrl-100Italic.woff2') format('woff2'),
+		url('MuseoSansCyrl-100Italic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('MuseoSansCyrl-300.eot');
+	src: url('MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+		url('MuseoSansCyrl-300.woff2') format('woff2'),
+		url('MuseoSansCyrl-300.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('MuseoSansCyrl-900.eot');
+	src: url('MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+		url('MuseoSansCyrl-900.woff2') format('woff2'),
+		url('MuseoSansCyrl-900.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('MuseoSansCyrl-100.eot');
+	src: url('MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+		url('MuseoSansCyrl-100.woff2') format('woff2'),
+		url('MuseoSansCyrl-100.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('MuseoSansCyrl-700.eot');
+	src: url('MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+		url('MuseoSansCyrl-700.woff2') format('woff2'),
+		url('MuseoSansCyrl-700.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');

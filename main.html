@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name= "viewport" content= "width=device-width, initial-scale=1.0, user-scalable=no" >
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/ion.tabs.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ion.tabs.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.dotdotdot.min.js"></script>
+  <script src="js/main.js"></script> 
+  <title>Газобетон</title>
+</head>
+<body>
+  <div class="popUp-overlay">
+    <div class="popUp  popUp-city" data-target="city">
+      <div class="popUp-city__title">
+        <span>выберите</span>
+        Ваш город
+      </div>
+      <form action="" class="popUp-city__form">
+        <div class="popUp-city__input-block  input-block">
+          <input class="popUp-city__input-text" type="text" placeholder="Название города">
+        </div>
+        <div class="popUp-city__input-block  input-block">
+          <input class="popUp-city__input-submit" type="submit" value="">
+        </div>
+      </form>
+      <ul class="popUp-city__list">
+        <li><a class="popUp-city__main-city" href="">Москва и Подмосковье</a></li>
+        <li><a class="popUp-city__main-city" href="">Санкт-Петербург</a></li>
+        <li><a class="popUp-city__main-city" href="">Иркутск</a></li>
+        <li><a class="popUp-city__main-city" href="">Ангарск</a></li>
+        <li><a class="popUp-city__main-city" href="">Саянск</a></li>
+        <li><a href="">Абакан</a></li>
+        <li><a href="">Архангельск</a></li>
+        <li><a href="">Астрахань</a></li>
+        <li><a href="">Город10</a></li>
+        <li><a href="">Город11</a></li>
+        <li><a href="">Город12</a></li>
+        <li><a href="">Город13</a></li>
+        <li><a href="">Город14</a></li>
+        <li><a href="">Город15</a></li>
+      </ul>
+    </div>
+    <div class="popUp popUp-request" data-target="request">
+      <div class="popUp-request__title">
+        <span>онлайн</span>
+        ЗАЯВКА
+      </div>
+      <form action="" class="popUp-request__form">
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Ваше имя
+          </span>
+          <input type="text" class="popUp-request__form-input">
+        </div>
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Номер телефона
+          </span>
+          <input type="text" class="popUp-request__form-input">
+        </div>
+        <div class="input-block  popUp-request__form-input-block">
+          <span class="popUp-request__form-input-title">
+            Комментарий (сколько м3, какой город)
+          </span>
+          <textarea class="popUp-request__form-textarea"></textarea>
+        </div>
+        <div class="input-block popUp-request__form-input-block-submit">
+          <input class="popUp-request__form-submit" type="submit" value="Отправить заявку">
+        </div>
+      </form>
+    </div>
+  </div>
+  <header class="header">
+    <div class="wrap">
+      <nav class="header__nav  menu  clear">
+        <li>
+          <a href="">Новости</a>
+        </li>
+        <li>
+          <a href="">Компания</a>
+        </li>
+        <li>
+          <a class="active" href="">Производство</a>
+        </li>
+        <li>
+          <a href="">Где купить</a>
+        </li>
+      </nav>
+      <div class="header__city">
+        <span class="header__city-title">
+          ваш город:
+        </span>
+        <a href="" class="header__city-button popButton" data-target="city">Иркутск</a>
+      </div>
+      <a href="tel:8(3952)783-783" class="header__phone">8(3952)783-783</a>
+      <div class="header__socials">
+        <a href="" class="header__soc-item  header__soc-item--insta"></a>
+        <a href="" class="header__soc-item  header__soc-item--vk"></a>
+        <a href="" class="header__soc-item  header__soc-item--ok"></a>
+      </div>
+      <div class="header__cart">
+        <a href="" class="header__cart-title">
+          Корзина <div class="header__cart-count">(<span>0</span>)</div>
+        </a>
+      </div>
+      <a href="" class="header__profile"></a>
+    </div>
+  </header>
+  <header class="header  header--float">
+    <div class="wrap">
+      <div class="header--float__logo">
+        <a href="">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header--float__menu-button-block">
+        <button class="header--float__menu-button cmn-toggle-switch cmn-toggle-switch__htx">
+          <span>toggle menu</span>
+        </button>
+      </div>
+      <nav class="header__nav  menu  clear">
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href="">О компании</a>
+          <ul class="drop-menu">
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Компания</a>
+            </li>
+            <li>
+              <a href="">Наше производство</a>
+            </li>
+            <li>
+              <a href="">Где купить</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">О газобетоне</a>
+        </li>
+        <li>
+          <a class="" href="">Каталог продукции</a>
+          <ul class="drop-menu">
+            <li>
+              <a href="">Первый</a>
+            </li>
+            <li>
+              <a href="">Второй</a>
+            </li>
+            <li>
+              <a href="">Третий</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Услуги</a>
+        </li>
+        <li>
+          <a href="">Проекты</a>
+        </li>
+      </nav>
+      <div class="header__city">
+      <a href="" class="header__profile"></a>
+        <span class="header__city-title">
+          ваш город:
+        </span>
+        <a href="" class="header__city-button popButton" data-target="city">Иркутск</a>
+      </div>
+      <a href="tel:8(3952)783-783" class="header__phone  desc">8(3952)783-783</a>
+      <div class="header__socials">
+      <a href="tel:8(3952)783-783" class="header__phone">8(3952)783-783</a>
+        <a href="" class="header__soc-item  header__soc-item--insta"></a>
+        <a href="" class="header__soc-item  header__soc-item--vk"></a>
+        <a href="" class="header__soc-item  header__soc-item--ok"></a>
+      </div>
+      <div class="header__cart">
+        <a href="" class="header__cart-title">
+          Корзина <div class="header__cart-count">(<span>0</span>)</div>
+        </a>
+      </div>
+      <a href="" class="header__profile  desc"></a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-top">
+      <div class="wrap">
+        <div class="top-menu">
+          <div class="top-menu__logo">
+            <a href="">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <nav class="top-menu__nav  menu">
+            <li>
+              <a href="">О газобетоне</a>
+            </li>
+            <li class="have-menu">
+              <a class="active have-menu" href="">Каталог продукции</a>
+              <ul class="drop-menu">
+                <li>
+                  <a href="">Газобетонные блоки</a>
+                </li>
+                <li>
+                  <a class="active" href="">U-образные блоки</a>
+                </li>
+                <li>
+                  <a href="">Клей</a>
+                </li>
+                <li>
+                  <a href="">Сухие смеси</a>
+                </li>
+                <li>
+                  <a href="">Инструмент</a>
+                </li>
+                <li>
+                  <a href="">насыпной утеплитель</a>
+                </li>
+                <li>
+                  <a href="">Крепление</a>
+                </li>
+                <li>
+                  <a href="">арматура</a>
+                </li>
+                <li>
+                  <a href="">гидроизоляция</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Услуги</a>
+            </li>
+            <li>
+              <a href="">Проекты</a>
+            </li>
+          </nav>
+          <div class="top-menu__search">
+            <form action="">
+              <input type="text" class="top-menu__search-input" placeholder="поиск по сайту">
+              <input type="submit" class="top-menu__search-submit" value="">
+            </form>
+          </div>
+        </div>
+        <h1 class="main-top__title">
+          <span>
+            Автоклавный
+          </span>
+          Газобетон
+        </h1>
+        <div class="main-top__sub-title">
+          лучший современный строительный материал для применения в малоэтажном и многоэтажном строительстве
+        </div>
+      </div>
+      <a href="" class="popButton  request-button" data-target="request">Оставить заявку</a>
+    </section>
+    <section class="fast-info">
+      <div class="wrap clear">
+        <div id="tabs_1" class="fast-info__blocks  tabs  ionTabs" data-name="Tabs1">
+          <div class="fast-info__tabs-body  ionTabs__body">
+            <div class="fast-info__tabs-body-content  ionTabs__item" data-name="Tab_1">
+              <div class="fast-info__blocks-top">
+                <div class="fast-info__blocks-current-item">
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)2</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)2</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)2</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fast-info__blocks-pagination">
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fast-info__advantage">
+                <div class="fast-info__advantage-image">
+                  <img src="img/advantage.png" alt="">
+                </div>
+                <div class="fast-info__advantage-text">
+                  <div class="fast-info__advantage-title">
+                    Реальная экономия!
+                  </div>
+                  <div class="fast-info__advantage-desc">
+                    <b>Один блок</b> газобетона весом <b>36 кг</b> заменяет <b>32 кирпича,</b> вес которых составит 120 кг, выгода в скорости строительства очевидна.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fast-info__tabs-body-content  ionTabs__item" data-name="Tab_2">
+              <div class="fast-info__blocks-top">
+                <div class="fast-info__blocks-current-item">
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)1</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)2</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)3</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)24</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)</span>
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-current-item-slide">
+                    <div class="fast-info__blocks-current-item-image">
+                      <a href="">
+                        <img src="img/item-1.png" alt="">
+                      </a>
+                    </div>
+                    <div class="fast-info__blocks-current-item-title">
+                      <a href="">Основной блок Б-2,4</a>
+                      <span>(от 22,5 кг, 250х250х625, Стройкомплекс)2</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fast-info__blocks-pagination">
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="fast-info__blocks-pagination-item">
+                    <div class="fast-info__blocks-pagination-item-image">
+                      <img src="img/item-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fast-info__advantage">
+                <div class="fast-info__advantage-image">
+                  <img src="img/advantage.png" alt="">
+                </div>
+                <div class="fast-info__advantage-text">
+                  <div class="fast-info__advantage-title">
+                    Реальная экономия!
+                  </div>
+                  <div class="fast-info__advantage-desc">
+                    <b>Один блок</b> газобетона весом <b>36 кг</b> заменяет <b>32 кирпича,</b> вес которых составит 120 кг, выгода в скорости строительства очевидна.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ionTabs__preloader"></div>
+          </div>
+          <ul class="ionTabs__head  fast-info__tabs">
+            <li class="fast-info__tabs-tab  ionTabs__tab  ionTabs__tab1" data-target="Tab_1">
+              <span class="fast-info__tabs-title">
+                «Стройкомплекс»
+              </span>
+              <span class="fast-info__tabs-sub-title">
+                (торговая марка «Стройкомплекс», г. Ангарск)
+              </span>
+            </li>
+            <li class="fast-info__tabs-tab  ionTabs__tab  ionTabs__tab2" data-target="Tab_2">
+              <span class="fast-info__tabs-title">
+                «Саянскгазобетон»
+              </span>
+              <span class="fast-info__tabs-sub-title">
+                (торговая марка - "Силекс", г . Саянск)
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="fast-info__advantages">
+          <div class="fast-info__advantages-title">
+            Мы гарантируем:
+          </div>
+          <div class="fast-info__advantages-advantage">
+            мировые стандарты<br>качества
+          </div>
+          <div class="fast-info__advantages-advantage">
+            полный набор преимуществ газобетонных блоков
+          </div>
+          <div class="fast-info__advantages-advantage">
+            весь ассортимент продукции<br>всегда в наличии
+          </div>
+          <div class="fast-info__advantages-advantage">
+            поставку любых объемов автоклавного газобетона в любую точку Сибири и Дальнего Востока
+          </div>
+          <div class="fast-info__down-price">
+            <span class="fast-info__down-price-title">
+              скачать
+            </span>
+            <span class="fast-info__down-price-name">
+              Прайс-лист
+            </span>
+            <span class="fast-info__down-price-info">
+              PDF, 4.3 mB
+            </span>
+            <a href="" class="fast-info__down-price-button"></a>
+          </div>
+          <div class="fast-info__bg-image"></div>
+        </div>
+      </div>
+    </section>
+    <section class="shares">
+      <div class="wrap">
+        <div class="shares__slider">
+          <div class="shares__slide">
+            <div class="shares__pagination-block">
+              <div class="shares__pagination-block-image">
+                <img src="img/share-img.jpg" alt="">
+              </div>
+            </div>
+            <div class="shares__title-block">
+              <span>автоклавный газобетон</span>
+              <span>НЕКОНДИЦИЯ</span>
+              <span>по безумно низкой цене!</span>
+            </div>
+            <div class="shares__desc-block">
+              <div>
+                <span>2000</span>
+                <span>руб./м<sup>3</sup></span>
+              </div>
+            </div>
+            <a href="" class="shares__more-button">подробнее об акции</a>
+          </div>
+          <div class="shares__slide">
+            <div class="shares__pagination-block">
+              <div class="shares__pagination-block-image">
+                <img src="img/share-img.jpg" alt="">
+              </div>
+            </div>
+            <div class="shares__title-block">
+              <span>автоклавный газобетон</span>
+              <span>НЕКОНДИЦИЯ</span>
+              <span>по безумно низкой цене!</span>
+            </div>
+            <div class="shares__desc-block">
+              <div>
+                <span>2000</span>
+                <span>руб./м<sup>3</sup></span>
+              </div>
+            </div>
+            <a href="" class="shares__more-button">подробнее об акции</a>
+          </div>
+          <div class="shares__slide">
+            <div class="shares__pagination-block">
+              <div class="shares__pagination-block-image">
+                <img src="img/share-img.jpg" alt="">
+              </div>
+            </div>
+            <div class="shares__title-block">
+              <span>автоклавный газобетон</span>
+              <span>НЕКОНДИЦИЯ</span>
+              <span>по безумно низкой цене!</span>
+            </div>
+            <div class="shares__desc-block">
+              <div>
+                <span>2000</span>
+                <span>руб./м<sup>3</sup></span>
+              </div>
+            </div>
+            <a href="" class="shares__more-button">подробнее об акции</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quality">
+      <div class="wrap clear">
+        <div class="quality__text-block">
+          <span class="quality__title">
+            За качество отвечаем!
+          </span>
+          <div class="quality__text">
+            <b>Работаем по немецкой технологии производства:</b> Наш газобетон производится из кварцевого песка, цемента, извести, аллюминевой пасты и гипса. Точное следование технологии позволяет добиться идеальной геометрии блоков и экологичности продукции.
+          </div>
+          <a href="" class="quality__more">подробнее об особенностях технологии</a>
+        </div>
+        <div class="quality__image-block">
+          <img src="img/quality-img.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="advantages-slider">
+      <div class="wrap">
+        <div class="advantages-slider__title">
+          преимущества автоклавного газобетона
+        </div>
+        <div class="advantages-slider__pagination">
+          <div class="advantages-slider__pagination-item">
+            <div class="advantages-slider__pagination-image">
+              <img src="img/adv-slid-pag-1.png" alt="">
+            </div>
+            <div class="advantages-slider__pagination-title">
+              Энергоэффективность
+            </div>
+          </div>
+          <div class="advantages-slider__pagination-item">
+            <div class="advantages-slider__pagination-image">
+              <img src="img/adv-slid-pag-1.png" alt="">
+            </div>
+            <div class="advantages-slider__pagination-title">
+              Энергоэффективность
+            </div>
+          </div>
+          <div class="advantages-slider__pagination-item">
+            <div class="advantages-slider__pagination-image">
+              <img src="img/adv-slid-pag-1.png" alt="">
+            </div>
+            <div class="advantages-slider__pagination-title">
+              Энергоэффективность
+            </div>
+          </div>
+          <div class="advantages-slider__pagination-item">
+            <div class="advantages-slider__pagination-image">
+              <img src="img/adv-slid-pag-1.png" alt="">
+            </div>
+            <div class="advantages-slider__pagination-title">
+              Энергоэффективность
+            </div>
+          </div>
+          <div class="advantages-slider__pagination-item">
+            <div class="advantages-slider__pagination-image">
+              <img src="img/adv-slid-pag-1.png" alt="">
+            </div>
+            <div class="advantages-slider__pagination-title">
+              Энергоэффективность
+            </div>
+          </div>
+          <div class="advantages-slider__pagination-item">
+            <div class="advantages-slider__pagination-image">
+              <img src="img/adv-slid-pag-1.png" alt="">
+            </div>
+            <div class="advantages-slider__pagination-title">
+              Энергоэффективность
+            </div>
+          </div>
+        </div>
+        <div class="advantages-slider__content">
+          <div class="advantages-slider__content-item">
+            <div class="advantages-slider__content-text">
+              <b>Автоклавный газобетон – очень теплый материал.</b> По своим теплоизоляционным свойствам он подобен дереву и значительно (в 3 – 4 раза) превосходит такие распространенные материалы, как кирпич, тяжелые бетоны, различные пескоблоки и т. п. Превосходит он и неавтоклавные ячеистые бетоны (пенобетон, полистиролбетон, неавтоклавный газобетон) благодаря значительно меньшей эксплуатационной влажности при значительно большей прочности. Проверено и доказано - стена толщиной 40 см обеспечивает теплозащиту, соответствующую современным требованиям. 
+            </div>
+            <a href="" class="advantages-slider__content-more">читать полностью</a>
+          </div>
+          <div class="advantages-slider__content-item">
+            <div class="advantages-slider__content-text">
+              <b>Автоклавный газобетон – очень теплый материал.</b> По своим теплоизоляционным свойствам он подобен дереву и значительно (в 3 – 4 раза) превосходит такие распространенные материалы, как кирпич, тяжелые бетоны, различные пескоблоки и т. п. Превосходит он и неавтоклавные ячеистые бетоны (пенобетон, полистиролбетон, неавтоклавный газобетон) благодаря значительно меньшей эксплуатационной влажности при значительно большей прочности. Проверено и доказано - стена толщиной 40 см обеспечивает теплозащиту, соответствующую современным требованиям. 
+            </div>
+            <a href="" class="advantages-slider__content-more">читать полностью</a>
+          </div>
+          <div class="advantages-slider__content-item">
+            <div class="advantages-slider__content-text">
+              <b>Автоклавный газобетон – очень теплый материал.</b> По своим теплоизоляционным свойствам он подобен дереву и значительно (в 3 – 4 раза) превосходит такие распространенные материалы, как кирпич, тяжелые бетоны, различные пескоблоки и т. п. Превосходит он и неавтоклавные ячеистые бетоны (пенобетон, полистиролбетон, неавтоклавный газобетон) благодаря значительно меньшей эксплуатационной влажности при значительно большей прочности. Проверено и доказано - стена толщиной 40 см обеспечивает теплозащиту, соответствующую современным требованиям. 
+            </div>
+            <a href="" class="advantages-slider__content-more">читать полностью</a>
+          </div>
+          <div class="advantages-slider__content-item">
+            <div class="advantages-slider__content-text">
+              <b>Автоклавный газобетон – очень теплый материал.</b> По своим теплоизоляционным свойствам он подобен дереву и значительно (в 3 – 4 раза) превосходит такие распространенные материалы, как кирпич, тяжелые бетоны, различные пескоблоки и т. п. Превосходит он и неавтоклавные ячеистые бетоны (пенобетон, полистиролбетон, неавтоклавный газобетон) благодаря значительно меньшей эксплуатационной влажности при значительно большей прочности. Проверено и доказано - стена толщиной 40 см обеспечивает теплозащиту, соответствующую современным требованиям. 
+            </div>
+            <a href="" class="advantages-slider__content-more">читать полностью</a>
+          </div>
+          <div class="advantages-slider__content-item">
+            <div class="advantages-slider__content-text">
+              <b>Автоклавный газобетон – очень теплый материал.</b> По своим теплоизоляционным свойствам он подобен дереву и значительно (в 3 – 4 раза) превосходит такие распространенные материалы, как кирпич, тяжелые бетоны, различные пескоблоки и т. п. Превосходит он и неавтоклавные ячеистые бетоны (пенобетон, полистиролбетон, неавтоклавный газобетон) благодаря значительно меньшей эксплуатационной влажности при значительно большей прочности. Проверено и доказано - стена толщиной 40 см обеспечивает теплозащиту, соответствующую современным требованиям. 
+            </div>
+            <a href="" class="advantages-slider__content-more">читать полностью</a>
+          </div>
+          <div class="advantages-slider__content-item">
+            <div class="advantages-slider__content-text">
+              <b>Автоклавный газобетон – очень теплый материал.</b> По своим теплоизоляционным свойствам он подобен дереву и значительно (в 3 – 4 раза) превосходит такие распространенные материалы, как кирпич, тяжелые бетоны, различные пескоблоки и т. п. Превосходит он и неавтоклавные ячеистые бетоны (пенобетон, полистиролбетон, неавтоклавный газобетон) благодаря значительно меньшей эксплуатационной влажности при значительно большей прочности. Проверено и доказано - стена толщиной 40 см обеспечивает теплозащиту, соответствующую современным требованиям. 
+            </div>
+            <a href="" class="advantages-slider__content-more">читать полностью</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-slider  product-slider--slider">
+      <div class="full-screen-title__title-block">
+        <div class="wrap clear">
+          <h1 class="full-screen-title__title">
+            Газобетонные блоки
+          </h1>
+          <a href="" class="full-screen-title__more">
+            все газобетонные блоки
+          </a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="product-slider__list">
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-slider  product-slider--slider">
+      <div class="full-screen-title__title-block">
+        <div class="wrap clear">
+          <h1 class="full-screen-title__title">
+            Газобетонные блоки
+          </h1>
+          <a href="" class="full-screen-title__more">
+            все газобетонные блоки
+          </a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="product-slider__list">
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+          <div class="product-slider__item">
+            <div class="product-slider__photo">
+              <a href="">
+                <img src="img/item-1.png" alt="">
+              </a>
+            </div>
+            <a href="" class="product-slider__item-title">
+              Основной блок <b>Б-2,4</b>
+            </a>
+            <ul class="product-slider__desc clear">
+              <li class="clear">
+                <span class="product-slider__desc-title">Плотность</span>
+                <span class="product-slider__desc-content">D400</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Прочность</span>
+                <span class="product-slider__desc-content">B 2,5</span>
+              </li>
+              <li class="clear">
+                <span class="product-slider__desc-title">Масса одного блока</span>
+                <span class="product-slider__desc-content">B400</span>
+              </li>
+            </ul>
+            <div class="product-slider__size">
+              250х250х625 mm
+            </div>
+            <div class="product-slider__checkout">
+              <div class="product-slider__price">
+                <b>3400</b> руб./м<sup>3</sup>
+              </div>
+              <a href="" class="product-slider__cart-button"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="other">
+      <div class="full-screen-title__title-block">
+        <div class="wrap clear">
+          <h1 class="full-screen-title__title">
+            Сопутствующие товары
+          </h1>
+          <a href="" class="full-screen-title__more">
+            Перейти в каталог
+          </a>
+        </div>
+      </div>
+      <div class="wrap">
+        <ul class="other__list">
+          <li>
+            <a href="">Клей</a>
+          </li>
+          <li>
+            <a href="">Сухие смеси</a>
+          </li>
+          <li>
+            <a href="">Крепления</a>
+          </li>
+          <li>
+            <a href="">Насыпной Утеплитель</a>
+          </li>
+          <li>
+            <a href="">Арматура</a>
+          </li>
+          <li>
+            <a href="">Гидроизоляция</a>
+          </li>
+          <li>
+            <a href="">Инструменты</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="calculator">
+      <div class="wrap">
+        <div class="calculator__title-block">
+          <div class="calculator__title">
+            онлайн
+            <b>калькулятор</b>
+          </div>
+          <a href="" class="calculator__more">перейти на расширенный калькулятор</a>
+        </div>
+        <form action="" class="calculator-form">
+          <div class="calculator__input-block">
+            <label>
+              <span class="calculator__label-title">Длина стен (суммарно)</span>
+              <input type="number" class="calculator__input  calculator__input--lab" value="220">
+              <span class="calculator__input-lab">метров</span>
+            </label>
+          </div>
+          <div class="calculator__input-block  calculator__input-block--height">
+            <label>
+              <span class="calculator__label-title">Высота стен</span>
+              <input type="number" class="calculator__input  calculator__input--lab  calculator__input--height" value="0">
+              <span class="calculator__input-lab">метра</span>
+              <a href="" class="calculator-edit-button  calculator-edit-button--remove"></a>
+              <a href="" class="calculator-edit-button  calculator-edit-button--add"></a>
+            </label>
+          </div>
+          <div class="calculator__input-block">
+            <label>
+              <span class="calculator__label-title">Наличие сейсмо-пояса</span>
+              <select class="calculator__input  calculator__input--select">
+                <option value="сейсмо-пояс 1">сейсмо-пояс 1</option>
+                <option value="сейсмо-пояс 2">сейсмо-пояс 2</option>
+              </select>
+              <a href="" class="calculator-edit-button  calculator-edit-button--select"></a>
+            </label>
+          </div>
+          <div class="calculator__input-block">
+            <label>
+              <span class="calculator__label-title">Количество этажей</span>
+              <select class="calculator__input  calculator__input--lab  calculator__input--select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+              <span class="calculator__input-lab">этажа</span>
+              <a href="" class="calculator-edit-button  calculator-edit-button--select"></a>
+            </label>
+          </div>
+          <div class="calculator__input-block">
+            <label>
+              <span class="calculator__label-title">Плотность блоков</span>
+              <select class="calculator__input  calculator__input--select">
+                <option value="D300">D300</option>
+                <option value="D400">D400</option>
+              </select>
+              <a href="" class="calculator-edit-button  calculator-edit-button--select"></a>
+            </label>
+          </div>
+          <div class="calculator-type">
+            <div class="calculator-type__top-block">
+              <span>Основной блок сооружения: </span>
+              <div class="calculator-type__select-wrap">
+                <select class="calculator-type__select-block">
+                  <option value="б-2.4">Основной блок Б-2,4</option>
+                  <option value="б-2.4">Основной блок Б-2,3</option>
+                  <option value="б-2.4">Основной блок Б-2,5</option>
+                  <option value="б-2.4">Основной блок Б-2,4</option>
+                  <option value="б-2.4">Основной блок Б-2,3</option>
+                  <option value="б-2.4">Основной блок Б-2,5</option>
+                  <option value="б-2.4">Основной блок Б-2,3</option>
+                  <option value="б-2.4">Основной блок Б-2,5</option>
+                </select>
+              </div>
+              <span>(от 22,5 кг, 250х250х625)</span>
+            </div>
+            <div class="calculator-type__images">
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+              <div class="calculator-type__images-item">
+                <div class="calculator-type__images-image">
+                  <img src="img/item-1.png" alt="">
+                </div>
+                <div class="calculator-type__images-desc">
+                  400 mm
+                </div>
+              </div>
+            </div>
+            <div class="calculator__submit-block">
+              <input type="submit" value="рассчитать объем и стоимость">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="services">
+      <div class="wrap">
+        <div class="services__title-block">
+          <div class="services__title">
+            Услуги компании
+          </div>
+        </div>
+        <div class="services__items">
+          <div class="services__item">
+            <div class="services__item-left">
+              <div class="services__item-top">
+                <div class="services__item-image">
+                  <div>
+                    <img src="img/serv1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="services__item-title">
+                  Техническая консультация
+                </div>
+              </div>
+              <div class="services__item-desc">
+                В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика.
+              </div>
+              <a href="" class="services__item-more">подробнее об особенностях технологии</a>
+            </div>
+            <div class="services__item-right">
+              <div class="services__item-top">
+                <div class="services__item-image">
+                  <div>
+                    <img src="img/serv1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="services__item-title">
+                  Техническая консультация
+                </div>
+              </div>
+              <div class="services__item-desc">
+                В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика.
+              </div>
+              <a href="" class="services__item-more">подробнее об особенностях технологии</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-left">
+              <div class="services__item-top">
+                <div class="services__item-image">
+                  <div>
+                    <img src="img/serv1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="services__item-title">
+                  Техническая консультация
+                </div>
+              </div>
+              <div class="services__item-desc">
+                В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика.
+              </div>
+              <a href="" class="services__item-more">подробнее об особенностях технологии</a>
+            </div>
+            <div class="services__item-right">
+              <div class="services__item-top">
+                <div class="services__item-image">
+                  <div>
+                    <img src="img/serv1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="services__item-title">
+                  Техническая консультация
+                </div>
+              </div>
+              <div class="services__item-desc">
+                В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика.
+              </div>
+              <a href="" class="services__item-more">подробнее об особенностях технологии</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-left">
+              <div class="services__item-top">
+                <div class="services__item-image">
+                  <div>
+                    <img src="img/serv1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="services__item-title">
+                  Техническая консультация
+                </div>
+              </div>
+              <div class="services__item-desc">
+                В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика.
+              </div>
+              <a href="" class="services__item-more">подробнее об особенностях технологии</a>
+            </div>
+            <div class="services__item-right">
+              <div class="services__item-top">
+                <div class="services__item-image">
+                  <div>
+                    <img src="img/serv1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="services__item-title">
+                  Техническая консультация
+                </div>
+              </div>
+              <div class="services__item-desc">
+                В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика.
+              </div>
+              <a href="" class="services__item-more">подробнее об особенностях технологии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="guide">
+      <div class="wrap">
+        <div class="guide__col">
+          <div class="guide__nav">
+            <div class="guide__nav-item">
+              <div class="guide__nav-title-block">
+                <img src="img/guide-ico.png" alt="">
+                <a href="" class="guide__nav-title">
+                  Техническая документация
+                </a>
+              </div>
+              <div class="guide__nav-desc">
+                Сертификаты, СНИПы, ГОСТы, Альбомы технических решений, и многое другое
+              </div>
+            </div>
+            <div class="guide__nav-item">
+              <div class="guide__nav-title-block">
+                <img src="img/guide-ico.png" alt="">
+                <a href="" class="guide__nav-title">
+                  ТЕХНОЛОГИЯ ПРИМЕНЕНИЯ ГАЗОБЕТОНА
+                </a>
+              </div>
+              <div class="guide__nav-desc">
+                Кладка блока, армирование, фундаменты, преимущества кладки на клей, перемычки, выбор и устройство фасада, инструмент.
+              </div>
+            </div>
+            <div class="guide__nav-item">
+              <div class="guide__nav-title-block">
+                <img src="img/guide-ico.png" alt="">
+                <a href="" class="guide__nav-title">
+                  преимущества ГАЗОБЕТОНА
+                </a>
+              </div>
+              <div class="guide__nav-desc">
+                по сравнению с другими строительными материалами.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="guide__col">
+          <div class="guide__video">
+            <div class="guide__video-title">
+              <img src="img/video-title.png" alt="">
+              Видео-гид
+            </div>
+            <div class="guide__video-frame">
+              <iframe src="https://www.youtube.com/embed/tsJ_-NT0vUc" allowfullscreen></iframe>
+            </div>
+            <div class="guide__video-frame-title">
+              Как выглядит газобетонный блок?
+            </div>
+            <div class="guide__video-other-title">
+              Другие видео-презентации:
+            </div>
+            <div class="guide__video-select">
+              <select>
+                <option value="1">Как нарезать бастурму1</option>
+                <option value="2">Как нарезать бастурму2</option>
+                <option value="3">Как нарезать бастурму3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="guide__col">
+          <div class="guide__articles">
+            <div class="guide__articles-title">
+              Статьи по теме
+            </div>
+            <ul class="guide__articles-list">
+              <li><a href="">Из чего построить дом?</a></li>
+              <li><a href="">Строительство домов из газобетона</a></li>
+              <li><a href="">Отличие автоклавного газобетона от неавтоклавного</a></li>
+              <li><a href="">Чем газобетон отличается от пенобетона?</a></li>
+              <li><a href="">Сравнение кирпича и газобетона</a></li>
+              <li><a href="">Сравнения бруса и газобетона</a></li>
+            </ul>
+            <a href="" class="guide__articles-more">
+              Все вопросы и ответы
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="site-desc">
+      <div class="wrap">
+        <div class="site-desc__image">
+          <img src="img/logo-dark.png" alt="">
+        </div>
+        <div class="site-desc__text">
+          В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика. В процессе строительства дома всегда возникает множество вопросов. Некоторые вопросы, заданные слишком поздно, могут обойтись вам очень дорого. Какими бы опытными ни были ваши строители, неусыпный контроль строительства дома, в первую очередь, задача заказчика.
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top clear">
+        <nav class="footer__menu">
+          <ul class="clear">
+            <li><a href=""></a></li>
+            <li><a href="">Интернет-магазин</a></li>
+            <li><a class="active" href="">Компания</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <a href="" class="footer__soc-item  footer__soc-item--vk"></a>
+          <a href="" class="footer__soc-item  footer__soc-item--insta"></a>
+        </div>
+      </div>
+      <div class="footer__bottom clear">
+        <div class="footer__desc">
+          &#169; 2017 «Байкальский газобетон». Все права защищены
+        </div>
+        <a href="mailto:info@bgazobeton.ru" class="footer__mail">info@bgazobeton.ru</a>
+        <a href="tel:8(3952)783783" class="footer__phone">8(3952)783-783</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
