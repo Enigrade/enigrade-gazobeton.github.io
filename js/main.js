@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  $(window).on('load', function(){
+    $(".preloader").fadeOut(500);   
+  });
+
   $('.popUp-city__list li a').on('click', function(e){
     e.preventDefault();
     $(this).closest('.popUp-city').find('form').find('input[type="text"]').val($(this).text());
@@ -260,7 +264,9 @@ $(document).ready(function() {
     fade: true,
     speed: 700,
     dots: true,
-    cssEase: 'ease'
+    cssEase: 'ease',
+    autoplay: true,
+    autoplaySpeed: 3500
   });
 
   $('.cart__photo-big').slick({

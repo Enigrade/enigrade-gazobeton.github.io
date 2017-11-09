@@ -290,7 +290,8 @@
 
   .cart__albom {
     max-width: 100%;
-    width: calc(100% - 7.12rem);
+    // width: calc(100% - 7.12rem);
+    width: 100%;
     padding-bottom: 0;
   }
 
@@ -308,7 +309,8 @@
 
   .cart__characters, .cart__payment {
     max-width: 100%;
-    width: calc(100% / 2 - 7.12rem);
+    // width: calc(100% / 2 - 7.12rem);
+    width: 50%;
   }
 
   .simply__title {
@@ -1171,7 +1173,8 @@
 
   .cart__characters, .cart__payment {
     max-width: 100%;
-    width: calc(100% - 7.12rem);
+    // width: calc(100% - 7.12rem);
+    width: 100%;
   }
 
   .cart__characters {
