@@ -60,7 +60,39 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top}, 1200);
 });
 
+// *********************************************************************
+        var sending = false;
+        $('form').submit(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if (sending) return false;
+        var self = this;
+        var h = $(this).serializeArray();
+        var f = {};
+        for (var i = 0; i< h.length; i++) f[h[i].name] = h[i].value;
+        var sbmVal = $(this).find('[type=submit]').val();
+        $(this).find('[type=submit]').val('Отправка');
+        $.ajax({
+            url:'/ajax.php',
+            data:f,
+            type:'POST',
+            success:function(){
+                $(self).find('[type=submit]').val(sbmVal);
+                sending = false;
+                $('.popUp_overlay').removeClass('active');
+                $('.readyPop').toggleClass("active");
+                $('body').addClass("overfl");
+            },
+            error: function(){
+                $(self).find('[type=submit]').val(sbmVal);
+                sending = false;
+                alert('Заявка отправлена');
+            }
+        })
+        return false;
+    });
 
+// *********************************************************************
 
 })
 
@@ -71,6 +103,7 @@ $(document).ready(function(){
                       offset:       0,          // default
                       mobile:       false,       // default
                       live:         true        // default
+                      // duration:     false
                   }
                   )
   wow.init();
