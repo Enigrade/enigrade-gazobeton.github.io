@@ -77,7 +77,7 @@ $(document).ready(function(){
       }});
 
     $('.header-nav__menu--top .header-nav__menu-2-lvl > li').mouseover(function(){
-      min_heig = $(this).offset().top - 260;
+      min_heig = $(this).offset().top - 200;
       $(this).find('ul').css('min-height', min_heig);
       heig = $('.header-nav__menu-2-lvl').height();
     })
@@ -194,6 +194,20 @@ $(document).ready(function(){
   });
 
   $(".main-news__new-title a").dotdotdot({
+    ellipsis: "...",
+    wrap: "word",
+    fallbackToLetter: true,
+    after: null,
+    watch: false,
+    height: 60,
+    tolerance: 0,
+    lastCharacter: {
+      remove: [" ", ",", ";", ".", "!", "?"],
+      noEllipsis: []
+    }
+  });
+
+    $(".goods__item-title a").dotdotdot({
     ellipsis: "...",
     wrap: "word",
     fallbackToLetter: true,
