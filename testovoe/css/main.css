@@ -808,7 +808,7 @@ header nav a {
   margin-right: 2rem;
 }
 
-.scr21 .inp-block:nth-child(even) {
+.scr21 .inp-block:nth-child(odd) {
   margin-right: 0;
 }
 
