@@ -482,6 +482,7 @@ header nav a {
 
 .scr8, .scr12 {
   padding: 16px;
+  padding-top: 4rem;
   padding-bottom: 0;
   background: #fff;
 }
