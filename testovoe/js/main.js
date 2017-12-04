@@ -79,13 +79,13 @@ $('form').submit(function(e){
     success:function(){
       $(self).find('[type=submit]').val(sbmVal);
       sending = false;
-      $('.popUp_overlay').removeClass('active');
-      $('.readyPop').toggleClass("active");
-      $('body').addClass("overfl");
+      // $('.block12_popUp_overlay').removeClass('active');
+      // $('.ready_popUp_overlay').toggleClass("active");
+      // $('body').addClass("overfl");
     },
     error: function(){
       $(self).find('[type=submit]').val(sbmVal);
-      sending = true;
+      sending = false;
       alert('Заявка отправлена');
     }
   })
