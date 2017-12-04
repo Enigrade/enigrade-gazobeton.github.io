@@ -894,6 +894,10 @@ footer .item {
   clear: both;
 }
 
+.wrap-slim .image {
+  z-index: 99;
+}
+
 @media(max-width: 1287px) {
   .wrap {
     width: 100%;
