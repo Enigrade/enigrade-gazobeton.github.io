@@ -694,8 +694,8 @@ header nav a {
   width: 325px;
   margin-left: -5px;
   text-align: right;
-  margin-top: -60px;
-  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .scr17 .content {
