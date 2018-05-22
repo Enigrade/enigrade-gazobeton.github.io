@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "DINcond";
+  src: url('DNC57 (1).TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arkhip";
+  src: url('Arkhip_font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('ProximaNova-Light.eot');
+    src: url('ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Light.woff2') format('woff2'),
+        url('ProximaNova-Light.woff') format('woff'),
+        url('ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('ProximaNova-Regular.eot');
+    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff'),
+        url('ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArialNarrow';
+  src: url('ArialNarrow.eot');
+  src: url('ArialNarrow.eot?#iefix') format('embedded-opentype'),
+  url('ArialNarrow.woff2') format('woff2'),
+  url('ArialNarrow.woff') format('woff'),
+  url('ArialNarrow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('BebasNeueCyrillic.eot');
+    src: url('BebasNeueCyrillic.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueCyrillic.woff2') format('woff2'),
+        url('BebasNeueCyrillic.woff') format('woff'),
+        url('BebasNeueCyrillic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-ExtraBold.eot');
+    src: url('Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-ExtraBold.woff2') format('woff2'),
+        url('Gilroy-ExtraBold.woff') format('woff'),
+        url('Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Light.eot');
+    src: url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Light.woff2') format('woff2'),
+        url('Gilroy-Light.woff') format('woff'),
+        url('Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('GothamPro-Light.eot');
+    src: url('GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('GothamPro-Light.woff2') format('woff2'),
+        url('GothamPro-Light.woff') format('woff'),
+        url('GothamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('GothamPro.eot');
+    src: url('GothamPro.eot?#iefix') format('embedded-opentype'),
+        url('GothamPro.woff2') format('woff2'),
+        url('GothamPro.woff') format('woff'),
+        url('GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('Panton-Regular.eot');
+    src: url('Panton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Panton-Regular.woff2') format('woff2'),
+        url('Panton-Regular.woff') format('woff'),
+        url('Panton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Panton';
+    src: url('Panton-SemiBold.eot');
+    src: url('Panton-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Panton-SemiBold.woff2') format('woff2'),
+        url('Panton-SemiBold.woff') format('woff'),
+        url('Panton-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
