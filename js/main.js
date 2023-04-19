@@ -125,7 +125,7 @@ $(document).ready(function(){
       $.ajax({
         url:'/ajax.php',
         data:f,
-        type:'POST',
+        type:'GET',
         success:function(){
           $(self).find('[type=submit]').val(sbmVal);
           sending = false;
