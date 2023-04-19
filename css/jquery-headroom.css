@@ -1,0 +1,10 @@
+.headroom {
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.15s;
+  -o-transition: top 0.15s;
+  transition: top 0.15s;
+}
+.headroom-hidden {
+  top: calc(-5.5rem - 90px) !important;
+}
